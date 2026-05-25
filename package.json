@@ -1,0 +1,53 @@
+{
+  "name": "aoi-cli-sdk-ts",
+  "version": "0.1.0",
+  "description": "TypeScript SDK for building AOI-CLI tools — event emitter, types, error categories, subprocess helpers.",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "prepublishOnly": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx test/*.test.ts"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.7.3"
+  },
+  "license": "MIT",
+  "author": "Kevin Hunt <kevinhunt@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/agentoperable/aoi-cli-sdk-ts.git"
+  },
+  "homepage": "https://machinemode.io/spec",
+  "bugs": {
+    "url": "https://github.com/agentoperable/aoi-cli-sdk-ts/issues"
+  },
+  "keywords": [
+    "aoi",
+    "agent-operable",
+    "machine-mode",
+    "cli",
+    "sdk",
+    "jsonl",
+    "events"
+  ]
+}
